@@ -23,14 +23,13 @@ public class MainActivity extends AppCompatActivity {
          int guessInt=Integer.parseInt(editText.getText().toString());
          if(guessInt > randomnumber){
 
-             Toast.makeText(this,"Larger",Toast.LENGTH_LONG).show();
+             Toast.makeText(this,"Greater",Toast.LENGTH_LONG).show();
          } else if(guessInt  < randomnumber){
              Toast.makeText(this,"Lower",Toast.LENGTH_LONG).show();
          }
         else{
              Toast.makeText(this,"Equal",Toast.LENGTH_LONG).show();
          }
-
      }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
